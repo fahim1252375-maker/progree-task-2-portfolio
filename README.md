@@ -67,7 +67,7 @@ This is a static website. Netlify can deploy it directly from the `main` branch.
 | Publish directory | `.` |
 | Production branch | `main` |
 
-Every successful push to the connected production branch can trigger a new deployment, depending on the Netlify site configuration.
+**Current observed deployment:** Netlify reports the published site was uploaded with the manual deploy (Drop) workflow; this Netlify site is not yet confirmed as connected to this GitHub repository. To enable automatic deploys, open the Netlify project, choose **Project configuration → Build & deploy → Continuous deployment**, connect GitHub, select `fahim1252375-maker/progree-task-2-portfolio` and branch `main`, then set the build command to blank and publish directory to `.`. Confirm the first Git-based production deploy before relying on automatic updates.
 
 ## Quality and content notes
 
