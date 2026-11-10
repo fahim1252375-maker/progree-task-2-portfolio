@@ -52,6 +52,9 @@ You can also open `index.html` directly, although using a local server is recomm
 ├── styles.css          # Responsive visual system and layouts
 ├── script.js           # Navigation and interface interactions
 ├── CONTENT_AUDIT.md    # Content sources and verification notes
+├── _headers            # Netlify security response headers
+├── robots.txt          # Search crawler instructions
+├── sitemap.xml         # Canonical page sitemap
 ├── TASK2_REPORT.md     # Internship task report and QA checklist
 ├── LICENSE
 └── README.md
