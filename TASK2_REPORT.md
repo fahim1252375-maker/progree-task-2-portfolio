@@ -17,7 +17,8 @@ Build and publish a responsive personal portfolio using semantic HTML5, modern C
 - Used CSS Grid, Flexbox, custom properties, and responsive styling for different screen sizes.
 - Added a mobile navigation menu with accessible expanded-state attributes.
 - Implemented project category filtering, scroll progress, back-to-top behavior, and reveal-on-scroll effects.
-- Added reduced-motion handling and an email-copy interaction.
+- Added reduced-motion handling, visible keyboard-focus styles, and an email-copy interaction.
+- Added Netlify security response headers, crawler instructions, and a sitemap.
 - Documented the project setup, content sources, and deployment configuration in the repository.
 
 ## Technology
