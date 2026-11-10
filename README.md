@@ -1,6 +1,6 @@
 # Fahim — Developer Portfolio
 
-A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built with semantic HTML5, CSS, and vanilla JavaScript. The project presents selected development work, skills, learning milestones, and contact links.
+A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built with semantic HTML5, CSS, and vanilla JavaScript. It presents selected development work, skills, learning milestones, and contact links.
 
 ## Live website
 
@@ -12,23 +12,25 @@ A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built wit
 
 ## Features
 
-- Responsive layouts for desktop, tablet, and mobile
+- Responsive layouts using CSS Grid, Flexbox, and media queries
 - Semantic HTML sections and accessible navigation labels
-- Mobile navigation with synchronized `aria-expanded` state
-- Project category filters
+- Mobile navigation with synchronized `aria-expanded`, Escape-to-close, and focus handling
+- Project category filters with accessible `aria-pressed` state
 - Scroll progress indicator and back-to-top control
 - Scroll-reveal effects using the Intersection Observer API
-- Reduced-motion preference support
-- Email copy interaction with a fallback
-- Open Graph metadata and Person structured data
-- No framework or build step required
+- Reduced-motion support, including non-animated back-to-top behavior
+- Email-copy interaction with a fallback
+- Canonical URL, Open Graph/Twitter metadata, Person structured data, and SVG favicon
+- Netlify response headers, crawler instructions, and XML sitemap
+- No framework, build command, or third-party JavaScript dependencies
 
-## Tech stack
+## Technology
 
 - HTML5
 - CSS3 (Grid, Flexbox, custom properties, media queries)
 - Vanilla JavaScript (ES6+)
-- Netlify for static hosting
+- Git/GitHub
+- Netlify static hosting
 
 ## Run locally
 
@@ -42,15 +44,14 @@ python3 -m http.server 8000
 
 Open [http://localhost:8000](http://localhost:8000).
 
-You can also open `index.html` directly, although using a local server is recommended for a more realistic browser test.
-
 ## Project structure
 
 ```text
 .
-├── index.html          # Page content and metadata
+├── index.html          # Page content, structured data, and SEO metadata
 ├── styles.css          # Responsive visual system and layouts
-├── script.js           # Navigation and interface interactions
+├── script.js           # Navigation, filters, and interface interactions
+├── favicon.svg         # Portfolio favicon
 ├── CONTENT_AUDIT.md    # Content sources and verification notes
 ├── _headers            # Netlify security response headers
 ├── robots.txt          # Search crawler instructions
@@ -62,37 +63,40 @@ You can also open `index.html` directly, although using a local server is recomm
 
 ## Deployment
 
-This is a static website. Netlify can deploy it directly from the `main` branch.
+This is a static website. Recommended Netlify Git deployment settings:
 
 | Setting | Value |
 | --- | --- |
+| Production branch | `main` |
 | Build command | Leave blank |
 | Publish directory | `.` |
-| Production branch | `main` |
 
-**Current observed deployment:** Netlify reports the published site was uploaded with the manual deploy (Drop) workflow; this Netlify site is not yet confirmed as connected to this GitHub repository. To enable automatic deploys, open the Netlify project, choose **Project configuration → Build & deploy → Continuous deployment**, connect GitHub, select `fahim1252375-maker/progree-task-2-portfolio` and branch `main`, then set the build command to blank and publish directory to `.`. Confirm the first Git-based production deploy before relying on automatic updates.
+**Deployment status note:** The latest production deploy inspected during this report was created through Netlify's manual Drop workflow (`manual_deploy: true`, no commit reference). GitHub changes therefore do not automatically update the live site yet. Connect this repository in **Netlify → Project configuration → Build & deploy → Continuous deployment**, select `fahim1252375-maker/progree-task-2-portfolio` and branch `main`, then retain the blank build command and publish directory `.`. Confirm the first Git-based deploy before relying on automatic updates.
 
-## Quality and content notes
+The `.netlify/` directory is ignored by Git so local Netlify state is not committed.
 
-- Project descriptions distinguish the full-stack BlogSpace repository from its separate LocalStorage-based frontend demo.
+## Content accuracy
+
+- BlogSpace Full-Stack and the separate LocalStorage-based BlogSpace Frontend demo are described as distinct projects.
 - The Microsoft ML-For-Beginners repository is described as a study fork, not original curriculum authorship.
-- Concept-stage ideas are labelled as explorations rather than completed products.
-- No unverified client metrics, revenue, awards, or performance scores are claimed.
-- The content audit records items that still need primary-source confirmation.
+- Early-stage concepts are labelled as explorations rather than completed products.
+- The portfolio does not claim unverified clients, revenue, awards, or performance scores.
+- Credential IDs and verification links are not invented. See `CONTENT_AUDIT.md` for source and verification notes.
 
 ## Manual QA checklist
 
-Before submitting the internship task, verify the deployed site in current desktop and mobile browsers:
+The following browser checks must be completed on the deployed version before internship submission:
 
-- [ ] All navigation links reach the correct sections.
-- [ ] Mobile menu opens, closes, and closes after a navigation link is selected.
-- [ ] Project filters show the correct cards.
-- [ ] Theme or other controls (if present in the current deployed build) work as expected.
-- [ ] Email and external project links open correctly.
-- [ ] No horizontal overflow at narrow viewport widths.
-- [ ] Keyboard focus is visible and interactive controls are keyboard accessible.
-- [ ] No broken images, missing assets, or browser-console errors.
-- [ ] Capture desktop and mobile screenshots for the Task 2 report.
+- [ ] Verify navigation and section links in desktop and mobile browsers.
+- [ ] Open the mobile menu, press Escape, and confirm focus returns to the menu button.
+- [ ] Open the mobile menu and activate a section link; confirm the menu closes and the destination receives focus.
+- [ ] Verify every project filter and the empty state.
+- [ ] Test email copy, email link, and all external project links.
+- [ ] Check for horizontal overflow at narrow viewport widths.
+- [ ] Complete a keyboard-only walkthrough and check visible focus.
+- [ ] Check browser console errors, failed requests, and broken links.
+- [ ] Check colour contrast and reduced-motion behavior.
+- [ ] Capture genuine desktop, mobile, open-menu, and project-filter screenshots for the Task 2 report.
 
 ## License
 
