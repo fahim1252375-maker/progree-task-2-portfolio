@@ -1,58 +1,96 @@
-# Fahim — Portfolio 2.0
+# Fahim — Developer Portfolio
 
-A responsive, single-page developer portfolio built with semantic HTML, modern CSS, and vanilla JavaScript. It is intentionally dependency-free so it can be opened locally or deployed to Netlify, GitHub Pages, or any static host.
+A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built with semantic HTML5, CSS, and vanilla JavaScript. The project presents selected development work, skills, learning milestones, and contact links.
+
+## Live website
+
+**[View the portfolio](https://grand-starlight-0c4115.netlify.app/)**
+
+## Repository
+
+**[GitHub source](https://github.com/fahim1252375-maker/progree-task-2-portfolio)**
+
+## Features
+
+- Responsive layouts for desktop, tablet, and mobile
+- Semantic HTML sections and accessible navigation labels
+- Mobile navigation with synchronized `aria-expanded` state
+- Project category filters
+- Scroll progress indicator and back-to-top control
+- Scroll-reveal effects using the Intersection Observer API
+- Reduced-motion preference support
+- Email copy interaction with a fallback
+- Open Graph metadata and Person structured data
+- No framework or build step required
+
+## Tech stack
+
+- HTML5
+- CSS3 (Grid, Flexbox, custom properties, media queries)
+- Vanilla JavaScript (ES6+)
+- Netlify for static hosting
 
 ## Run locally
 
+Python 3 is sufficient; no package installation is required.
+
 ```bash
+git clone https://github.com/fahim1252375-maker/progree-task-2-portfolio.git
+cd progree-task-2-portfolio
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000`.
+Open [http://localhost:8000](http://localhost:8000).
 
-## Included
+You can also open `index.html` directly, although using a local server is recommended for a more realistic browser test.
 
-- Responsive layout for desktop, tablet, and mobile
-- Mobile navigation with accessible expanded state
-- Scroll progress indicator and back-to-top control
-- Scroll reveal animations using `IntersectionObserver`
-- Project category filters
-- Subtle pointer tilt on fine-pointer devices
-- Reduced-motion support
-- Email copy control with fallback
-- Semantic page sections, meta description, Open Graph metadata, and Person JSON-LD
-- Project cards linking to the repository-backed projects
-- Credentials section with only the details currently known
-- Explicit labels for concept-stage work and the Microsoft curriculum study fork
+## Project structure
 
-## Content verification notes
+```text
+.
+├── index.html          # Page content and metadata
+├── styles.css          # Responsive visual system and layouts
+├── script.js           # Navigation and interface interactions
+├── CONTENT_AUDIT.md    # Content sources and verification notes
+├── TASK2_REPORT.md     # Internship task report and QA checklist
+├── LICENSE
+└── README.md
+```
 
-This version was assembled from the connected GitHub profile and repositories, prior information supplied by the portfolio owner, and a LinkedIn profile identity match. The connected LinkedIn action in this session only supports people/profile lookup; it does not expose the owner's activity feed, certificate attachments, or complete project activity.
+## Deployment
 
-Verified from the GitHub profile README and repositories:
+This is a static website. Netlify can deploy it directly from the `main` branch.
 
-- BlogSpace full-stack repository: https://github.com/fahim1252375-maker/blogspace-fullstack
-- BlogSpace frontend repository and public demo: https://github.com/fahim1252375-maker/blog-application-frontend / https://bejewelled-haupia-dd6200.netlify.app
-- Cinnamon restaurant website concept repository: https://github.com/fahim1252375-maker/restaurant-website-frontend
-- ML-For-Beginners is a study fork of Microsoft's curriculum, not an original curriculum authored by the owner.
-- BlogSpace README documents JWT authentication, bcryptjs password hashing, MongoDB persistence, protected author workflows, ownership checks, and security work merged in PR #2. It reports 13 automated tests and build/type checks passing in the November 9, 2026 development session; these have not been rerun by this portfolio package.
+| Setting | Value |
+| --- | --- |
+| Build command | Leave blank |
+| Publish directory | `.` |
+| Production branch | `main` |
 
-Credential details included from information previously provided:
+Every successful push to the connected production branch can trigger a new deployment, depending on the Netlify site configuration.
 
-- Certificate of Excellence — Full Stack Development with MERN, Grameenphone Academy × CodersTrust (October 2026)
-- Best Project / Best Performer recognition, IT Aid Web Design Course (exact official wording should be checked against the certificate)
-- Build ATS-Winning CV certificate (issuer/credential URL not supplied)
-- Four Microsoft Learn badges (individual module names/URLs not supplied)
+## Quality and content notes
 
-Early-stage concepts (FloodGuard AI and ScholarPath) are labelled as explorations, not finished or deployed products. Community and STEM activity descriptions are deliberately broad where exact dates, titles, or public proof links were not available.
+- Project descriptions distinguish the full-stack BlogSpace repository from its separate LocalStorage-based frontend demo.
+- The Microsoft ML-For-Beginners repository is described as a study fork, not original curriculum authorship.
+- Concept-stage ideas are labelled as explorations rather than completed products.
+- No unverified client metrics, revenue, awards, or performance scores are claimed.
+- The content audit records items that still need primary-source confirmation.
 
-## Before publishing
+## Manual QA checklist
 
-1. Add certificate scans or credential verification URLs.
-2. Confirm the exact official wording for the IT Aid recognition and Build ATS-Winning CV issuer.
-3. Confirm current status and public URLs for the concept-stage projects.
-4. Add screenshots of each project after capturing them from the actual running apps.
-5. Review every activity, date, and title for accuracy.
-6. Run a mobile/desktop visual check and keyboard accessibility pass.
+Before submitting the internship task, verify the deployed site in current desktop and mobile browsers:
 
-No fake project metrics, client claims, ratings, certificate IDs, or awards have been added.
+- [ ] All navigation links reach the correct sections.
+- [ ] Mobile menu opens, closes, and closes after a navigation link is selected.
+- [ ] Project filters show the correct cards.
+- [ ] Theme or other controls (if present in the current deployed build) work as expected.
+- [ ] Email and external project links open correctly.
+- [ ] No horizontal overflow at narrow viewport widths.
+- [ ] Keyboard focus is visible and interactive controls are keyboard accessible.
+- [ ] No broken images, missing assets, or browser-console errors.
+- [ ] Capture desktop and mobile screenshots for the Task 2 report.
+
+## License
+
+Released under the MIT License. See [LICENSE](LICENSE).
