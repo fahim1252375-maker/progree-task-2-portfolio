@@ -3,3 +3,24 @@
 
 /* Visible keyboard focus for links, buttons, and form controls. */
 :where(a,button,[tabindex]):focus-visible{outline:2px solid var(--lime);outline-offset:4px;border-radius:4px}
+
+
+/* Reviewed open-source contributions */
+.opensource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.contribution-card{display:flex;flex-direction:column;min-height:100%;padding:25px;background:linear-gradient(145deg,#111923,#0c1118);border:1px solid var(--line);border-radius:13px;transition:border-color .3s,transform .3s}
+.contribution-card:hover{border-color:#c8f36b50;transform:translateY(-3px)}
+.contribution-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px}
+.contribution-status{display:inline-flex;align-items:center;gap:8px;color:var(--lime);font:500 9px var(--mono);letter-spacing:.12em}
+.contribution-status i{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px #c8f36b80}
+.contribution-kind{color:var(--faint);font:500 8px var(--mono);letter-spacing:.1em;text-align:right}
+.contribution-card h3{font:700 21px/1.3 var(--display);letter-spacing:-.035em;margin:0 0 13px}
+.contribution-card p{color:#93a0ad;font-size:12px;line-height:1.9;margin:0 0 20px}
+.contribution-card code,.opensource-note code{font:10px var(--mono);color:#c9e9b5;background:#ffffff08;padding:2px 4px;border-radius:3px}
+.contribution-facts{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;margin-bottom:20px}
+.contribution-facts span{font:8px var(--mono);color:#aab8c3;background:#ffffff06;border:1px solid var(--line);border-radius:5px;padding:6px 8px}
+.contribution-links{display:flex;flex-wrap:wrap;gap:16px;padding-top:16px;border-top:1px solid var(--line)}
+.contribution-links a{color:#dce6ec;font-size:10px;font-weight:600}
+.contribution-links a span{color:var(--lime);margin-left:4px}
+.contribution-links a:hover{color:var(--lime)}
+.opensource-note{margin:17px 0 0;color:#788798;font-size:10px;line-height:1.8}
+@media(max-width:650px){.opensource-grid{grid-template-columns:1fr}.contribution-card{padding:21px}.contribution-card h3{font-size:19px}.contribution-top{margin-bottom:19px}}
