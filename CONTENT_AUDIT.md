@@ -53,3 +53,14 @@ A personal study fork of Microsoft's learning curriculum. It is explicitly not r
 - Check exact certificate names, issuer names, dates, and verification URLs against originals.
 - Confirm the current state, descriptions, and public links for each early-stage concept.
 - Capture current project screenshots from running deployments and add them only after checking the page content.
+
+
+## Neo.mjs open-source contributions added to the portfolio
+
+Verified against the connected GitHub repository and upstream PR / issue records on 2026-11-13:
+
+- **Merged PR #20785** — [Fix UUID generation on insecure HTTP origins](https://github.com/neomjs/neo/pull/20785), resolves [#20765](https://github.com/neomjs/neo/issues/20765). The merged change adds a shared RFC 4122 v4 UUID helper based on `crypto.getRandomValues()`, replaces browser-side `crypto.randomUUID()` calls across 18 call sites, updates `CanvasGroups.mint()`, and adds unit plus plain-HTTP component regression coverage. The PR changed 13 files (+119/-26) across 3 commits. Reviewer approval and green CI evidence were checked. Local tests were not run by the PR author; CI supplied the verification.
+- **Merged PR #20746** — [Enhance download tests and document BlobPart functionality](https://github.com/neomjs/neo/pull/20746), resolves [#20736](https://github.com/neomjs/neo/issues/20736). Clarifies the `FileDownload#saveText` JSDoc contract and adds Playwright tests for string and binary `Uint8Array` payloads. The PR changed 2 files (+106/-6) across 4 commits. The author reported the focused command passing 2 tests; reviewer records 33/33 active CI checks green.
+- Both PRs were merged into `neomjs/neo:dev`. AI-assisted development disclosure is present in the originating #20736 issue discussion and the #20785 PR description.
+
+The portfolio source now includes a dedicated Open-Source Contributions section with links to both merged PRs and their originating issues. Production publication and interactive browser QA remain separate pending items until the Git-backed deployment is configured and the checks are run in a real browser.
