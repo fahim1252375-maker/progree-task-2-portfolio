@@ -25,6 +25,7 @@ Build and publish a responsive personal portfolio using semantic HTML5, modern C
 - Preserved reduced-motion support and made the back-to-top interaction avoid smooth scrolling when reduced motion is requested.
 - Added canonical URL, Open Graph/Twitter metadata, and an SVG favicon.
 - Added/retained Netlify response headers, `robots.txt`, and `sitemap.xml`.
+- Added a dedicated Open-Source Contributions section with two verified merged Neo.mjs PRs, technical summaries, issue links, and upstream verification context.
 - Updated repository documentation and the QA checklist.
 
 ## Technology
@@ -39,7 +40,8 @@ The repository inspected for this report contains `index.html`, `styles.css`, an
 
 - Inspected the current GitHub `main` branch source files and Netlify deployment metadata.
 - Confirmed the page contains a single `main` landmark and one primary `h1`.
-- Confirmed eight project articles are present in the source markup.
+- Confirmed eight project articles and two merged Neo.mjs contribution cards are present in the source markup.
+- Confirmed the Open source navigation link targets the new section and both contribution cards link to their upstream PRs and issues.
 - Confirmed responsive media-query breakpoints and a visible `:focus-visible` style are present in the stylesheet.
 - Confirmed the previous published Netlify deploy was successful (`ready`) and was created using a manual Drop upload, not a Git-backed continuous deployment.
 - Confirmed the previous published deploy did not process the repository's `_headers` file. The headers will take effect only after a deploy that includes that file.
