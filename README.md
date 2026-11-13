@@ -13,6 +13,7 @@ A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built wit
 ## Features
 
 - Responsive layouts using CSS Grid, Flexbox, and media queries
+- Dedicated open-source section documenting two merged Neo.mjs contributions with issue and pull-request links
 - Semantic HTML sections and accessible navigation labels
 - Mobile navigation with synchronized `aria-expanded`, Escape-to-close, and focus handling
 - Project category filters with accessible `aria-pressed` state
