@@ -40,7 +40,7 @@
     <a class="brand" href="#top" aria-label="Fahim home"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FAHIM<span>/</span>DEV</span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span></button>
     <nav class="nav-links" id="primaryNav" aria-label="Primary navigation">
-      <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#credentials">Credentials</a><a href="#journey">Journey</a>
+      <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#credentials">Credentials</a><a href="#journey">Journey</a><a href="#opensource">Open source</a>
     </nav>
     <a class="header-cta" href="mailto:fahim1252375@icloud.com">Let's talk <span>↗</span></a>
   </header>
@@ -127,7 +127,57 @@
       </div>
     </section>
 
-    <section class="contact-section section-shell reveal" id="contact"><div class="contact-glow"></div><span class="section-kicker">HAVE A PROJECT OR AN IDEA?</span><h2>Let's build something<br /><span class="gradient-text">worth using.</span></h2><p>I'm interested in learning with others, meaningful collaborations, and opportunities to put thoughtful software into practice.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:fahim1252375@icloud.com">Send an email <span>↗</span></a><a class="btn btn-outline" href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">LinkedIn profile <span>↗</span></a></div><div class="contact-email"><span>EMAIL</span><button id="copyEmail" type="button" data-email="fahim1252375@icloud.com">fahim1252375@icloud.com <span>▣</span></button><span id="copyStatus" aria-live="polite"></span></div></section>
+    
+    <section class="section-shell section-pad" id="opensource">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">06 — OPEN-SOURCE CONTRIBUTIONS</span>
+          <h2>Learning through<br /><span class="muted-heading">upstream engineering.</span></h2>
+        </div>
+        <p class="section-intro">Focused contributions to Neo.mjs, an open-source JavaScript framework. Each change was submitted against a documented issue, reviewed upstream, and merged into the project's dev branch.</p>
+      </div>
+      <div class="opensource-grid">
+        <article class="contribution-card reveal">
+          <div class="contribution-top">
+            <span class="contribution-status"><i aria-hidden="true"></i> MERGED</span>
+            <span class="contribution-kind">BUG FIX · RUNTIME</span>
+          </div>
+          <h3>Fix UUID generation on insecure HTTP origins</h3>
+          <p>Added a shared RFC 4122 v4 UUID utility using <code>crypto.getRandomValues()</code>, replaced browser-side <code>crypto.randomUUID()</code> calls across 18 call sites, and updated <code>CanvasGroups.mint()</code> while preserving its existing ID format.</p>
+          <div class="contribution-facts">
+            <span>13 files changed</span>
+            <span>119 additions</span>
+            <span>Unit + Playwright coverage</span>
+            <span>CI checks passed</span>
+          </div>
+          <div class="contribution-links">
+            <a href="https://github.com/neomjs/neo/pull/20785" target="_blank" rel="noopener noreferrer">Pull request #20785 <span>↗</span></a>
+            <a href="https://github.com/neomjs/neo/issues/20765" target="_blank" rel="noopener noreferrer">Issue #20765 <span>↗</span></a>
+          </div>
+        </article>
+        <article class="contribution-card reveal reveal-delay">
+          <div class="contribution-top">
+            <span class="contribution-status"><i aria-hidden="true"></i> MERGED</span>
+            <span class="contribution-kind">DOCUMENTATION · TESTING</span>
+          </div>
+          <h3>Document BlobPart support and test binary downloads</h3>
+          <p>Clarified the <code>FileDownload#saveText</code> API contract for text and binary <code>BlobPart</code> payloads, then added Playwright unit tests for string and <code>Uint8Array</code> downloads, MIME types, byte integrity, and object-URL cleanup.</p>
+          <div class="contribution-facts">
+            <span>2 files changed</span>
+            <span>106 additions</span>
+            <span>2 targeted local tests passed</span>
+            <span>CI checks passed</span>
+          </div>
+          <div class="contribution-links">
+            <a href="https://github.com/neomjs/neo/pull/20746" target="_blank" rel="noopener noreferrer">Pull request #20746 <span>↗</span></a>
+            <a href="https://github.com/neomjs/neo/issues/20736" target="_blank" rel="noopener noreferrer">Issue #20736 <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="opensource-note">Both contributions were merged into <code>neomjs/neo:dev</code>. AI-assisted development is disclosed in the original issue / pull-request materials; I take responsibility for understanding and maintaining the work I submit.</p>
+    </section>
+
+<section class="contact-section section-shell reveal" id="contact"><div class="contact-glow"></div><span class="section-kicker">HAVE A PROJECT OR AN IDEA?</span><h2>Let's build something<br /><span class="gradient-text">worth using.</span></h2><p>I'm interested in learning with others, meaningful collaborations, and opportunities to put thoughtful software into practice.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:fahim1252375@icloud.com">Send an email <span>↗</span></a><a class="btn btn-outline" href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">LinkedIn profile <span>↗</span></a></div><div class="contact-email"><span>EMAIL</span><button id="copyEmail" type="button" data-email="fahim1252375@icloud.com">fahim1252375@icloud.com <span>▣</span></button><span id="copyStatus" aria-live="polite"></span></div></section>
   </main>
 
   <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FAHIM<span>/</span>DEV</span></a><p>Build with purpose. Test with care. Improve with every iteration.</p><div class="footer-links"><a href="https://github.com/fahim1252375-maker" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:fahim1252375@icloud.com">Email ↗</a><a href="https://classy-malabi-90a891.netlify.app" target="_blank" rel="noopener noreferrer">Previous portfolio ↗</a></div><span class="copyright">© <span id="year"></span> MD. MINHAZUR RAHMAN FAHIM</span></footer>
