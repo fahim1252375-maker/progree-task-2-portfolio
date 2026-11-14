@@ -1,187 +1,463 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#080b10" />
-  <meta name="description" content="MD. Minhazur Rahman Fahim — aspiring full-stack developer, building web applications and contributing to open-source software." />
-  <link rel="canonical" href="https://grand-starlight-0c4115.netlify.app/" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta property="og:title" content="Fahim — Full-Stack Developer" />
-  <meta property="og:description" content="Selected projects, engineering practice, skills, and merged Neo.mjs open-source contributions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://grand-starlight-0c4115.netlify.app/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Fahim — Full-Stack Developer" />
-  <meta name="twitter:description" content="Selected projects, engineering practice, skills, and merged Neo.mjs open-source contributions." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0e13">
+  <meta name="description" content="Fahim is a full-stack developer from Sylhet, Bangladesh, building thoughtful web applications, reliable APIs, and practical AI prototypes.">
+  <meta name="author" content="MD. Minhazur Rahman Fahim">
+  <link rel="canonical" href="https://grand-starlight-0c4115.netlify.app/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fahim — Full-Stack Developer">
+  <meta property="og:description" content="I build digital products with purpose and precision. Explore full-stack applications, applied AI prototypes, and open-source work.">
+  <meta property="og:url" content="https://grand-starlight-0c4115.netlify.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fahim — Full-Stack Developer">
+  <meta name="twitter:description" content="Full-stack applications, applied AI prototypes, and open-source engineering.">
   <title>Fahim — Full-Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"MD. Minhazur Rahman Fahim",
-    "jobTitle":"Aspiring Full-Stack Developer",
-    "address":{"@type":"PostalAddress","addressLocality":"Sylhet","addressCountry":"BD"},
-    "email":"mailto:fahim1252375@icloud.com",
-    "sameAs":["https://github.com/fahim1252375-maker","https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/"]
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "MD. Minhazur Rahman Fahim",
+    "alternateName": "Fahim",
+    "jobTitle": "Full-Stack Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sylhet",
+      "addressCountry": "BD"
+    },
+    "email": "mailto:fahim1252375@icloud.com",
+    "url": "https://grand-starlight-0c4115.netlify.app/",
+    "sameAs": [
+      "https://github.com/fahim1252375-maker",
+      "https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/"
+    ],
+    "knowsAbout": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "Web application development",
+      "Applied AI"
+    ]
   }
   </script>
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Fahim home"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FAHIM<span>/</span>DEV</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span></button>
-    <nav class="nav-links" id="primaryNav" aria-label="Primary navigation">
-      <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#credentials">Credentials</a><a href="#journey">Journey</a><a href="#opensource">Open source</a>
-    </nav>
-    <a class="header-cta" href="mailto:fahim1252375@icloud.com">Let's talk <span>↗</span></a>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Fahim home">
+        <span class="brand-mark">F<span>.</span></span>
+        <span class="brand-word">FAHIM<span>/</span>DEV</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="primaryNav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#opensource">Open source</a>
+        <a href="#journey">Journey</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.8 8.8 0 0 1 9.7 3.5 8.9 8.9 0 1 0 20.5 14.3Z"></path></svg>
+        </button>
+        <a class="header-cta" href="mailto:fahim1252375@icloud.com">Let's talk <span>↗</span></a>
+      </div>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero section-shell" aria-labelledby="heroTitle">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="live-dot"></span> OPEN TO LEARNING & COLLABORATION <span class="eyebrow-line"></span> SYLHET, BD</div>
-        <h1 id="heroTitle">Building useful<br />things for the <span class="gradient-text">digital world.</span></h1>
-        <p class="hero-lede">I'm <strong>MD. Minhazur Rahman Fahim</strong> — a science student and aspiring full-stack developer exploring the space between thoughtful interfaces, reliable backends, and practical AI.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span>↘</span></a><a class="btn btn-quiet" href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a></div>
-        <div class="hero-meta"><span><i class="meta-dot"></i> HSC Science · Blue Bird High School & College</span><span class="meta-divider"></span><span>Full-stack web development</span></div>
-      </div>
-      <div class="hero-visual reveal reveal-delay" aria-label="Developer workspace illustration">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-core"><span>F<span>.</span></span></div>
-        <div class="float-chip chip-react"><b>⚛</b> React</div><div class="float-chip chip-node"><b>⬡</b> Node.js</div><div class="float-chip chip-python"><b>⌘</b> Python</div>
-        <div class="code-window tilt-card">
-          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>fahim.ts</span><span class="window-status">● LIVE</span></div>
-          <div class="code-content"><div><span class="code-muted">01</span> <span class="code-purple">const</span> <span class="code-blue">developer</span> = {</div><div><span class="code-muted">02</span> &nbsp; name: <span class="code-green">"Fahim"</span>,</div><div><span class="code-muted">03</span> &nbsp; focus: <span class="code-green">"Full Stack"</span>,</div><div><span class="code-muted">04</span> &nbsp; learning: [</div><div><span class="code-muted">05</span> &nbsp; &nbsp; <span class="code-green">"Secure APIs"</span>,</div><div><span class="code-muted">06</span> &nbsp; &nbsp; <span class="code-green">"React + Node"</span>,</div><div><span class="code-muted">07</span> &nbsp; &nbsp; <span class="code-green">"Applied AI"</span></div><div><span class="code-muted">08</span> &nbsp; ]</div><div><span class="code-muted">09</span> };</div><div class="code-comment"><span class="code-muted">10</span> // build · test · improve</div></div>
-          <div class="window-footer"><span><i class="footer-pulse"></i> Always iterating</span><span>UTF-8&nbsp; · &nbsp;TS</span></div>
+        <div class="hero-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>FULL-STACK DEVELOPER</span>
+          <i></i>
+          <span>SYLHET, BANGLADESH · UTC+6</span>
         </div>
-        <div class="visual-caption"><span class="caption-line"></span> CODE WITH PURPOSE. BUILD WITH CARE.</div>
+
+        <h1 id="heroTitle">I build digital products <span>with purpose and precision.</span></h1>
+        <p class="hero-lede">I'm <strong>Fahim</strong> — a full-stack developer who turns ideas into useful web experiences, dependable APIs, and practical AI prototypes.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span>↘</span></a>
+          <a class="button button-secondary" href="mailto:fahim1252375@icloud.com">Start a conversation <span>↗</span></a>
+        </div>
+
+        <div class="hero-foot">
+          <span class="hero-location"><span class="location-mark">⌖</span> Sylhet, Bangladesh</span>
+          <span class="hero-availability"><span class="status-dot" aria-hidden="true"></span> Open to meaningful collaboration</span>
+        </div>
       </div>
-      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><div class="scroll-cue"><span></span></div><span>01 / 05</span></div>
-    </section>
 
-    <section class="trust-strip" aria-label="Core technologies"><div class="trust-track"><span>JAVASCRIPT</span><b>✳</b><span>REACT</span><b>✳</b><span>NODE.JS</span><b>✳</b><span>EXPRESS</span><b>✳</b><span>MONGODB</span><b>✳</b><span>PYTHON</span><b>✳</b><span>TYPESCRIPT</span><b>✳</b><span>JAVASCRIPT</span><b>✳</b><span>REACT</span><b>✳</b><span>NODE.JS</span><b>✳</b><span>EXPRESS</span><b>✳</b><span>MONGODB</span></div></section>
+      <div class="hero-visual reveal reveal-delay" aria-label="Illustrated product workspace">
+        <div class="visual-orbit visual-orbit-one"></div>
+        <div class="visual-orbit visual-orbit-two"></div>
+        <div class="visual-stamp"><span>BUILD</span><b>↗</b><span>ITERATE</span></div>
 
-    <section class="section-shell section-pad" id="about">
-      <div class="section-heading reveal"><div><span class="section-kicker">01 — THE PERSON BEHIND THE CODE</span><h2>Curious by nature.<br /><span class="muted-heading">Deliberate by practice.</span></h2></div><p class="section-intro">I learn by building, reviewing, testing, and improving. My current focus is becoming a stronger full-stack developer while exploring responsible, useful applications of AI.</p></div>
-      <div class="about-grid">
-        <article class="about-card about-main reveal"><div class="card-index">A / ABOUT</div><div class="about-monogram">F<span>.</span></div><h3>Engineering mindset,<br />student curiosity.</h3><p>I'm a science student at Blue Bird High School & College in Sylhet, Bangladesh. I enjoy turning ideas into usable web experiences and understanding what makes applications dependable behind the interface.</p><div class="about-tags"><span>Build</span><span>Test</span><span>Learn</span><span>Improve</span></div></article>
-        <article class="about-card about-stat reveal reveal-delay"><span class="card-index">B / CURRENT ROLE</span><div class="stat-icon">⌘</div><h3>Student developer</h3><p>HSC Science · Blue Bird High School & College</p><span class="card-foot">SYLHET, BANGLADESH</span></article>
-        <article class="about-card about-stat reveal"><span class="card-index">C / PRIMARY FOCUS</span><div class="stat-icon">{ }</div><h3>Full-stack web</h3><p>Responsive interfaces, REST APIs, authentication, and database-backed applications.</p><span class="card-foot">FRONTEND ↔ BACKEND</span></article>
-        <article class="about-card about-quote reveal reveal-delay"><span class="quote-mark">“</span><blockquote>Good software is not just what appears on screen. It is also the thoughtful engineering that makes it work.</blockquote><span class="card-foot">A PRINCIPLE I TRY TO FOLLOW</span></article>
+        <div class="workspace-card">
+          <div class="workspace-topbar">
+            <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>workspace / blogspace</span>
+            <span class="workspace-lock">● PRIVATE BY DESIGN</span>
+          </div>
+          <div class="workspace-content">
+            <div class="workspace-sidebar">
+              <span class="sidebar-logo">b<span>.</span></span>
+              <i class="sidebar-active"></i><i></i><i></i><i></i>
+            </div>
+            <div class="workspace-main">
+              <div class="workspace-overline">YOUR WRITING SPACE <span>01 / 03</span></div>
+              <div class="workspace-title">Ideas deserve<br><em>room to grow.</em></div>
+              <div class="workspace-description"></div>
+              <div class="workspace-description short"></div>
+              <div class="workspace-actions"><span>NEW STORY</span><span>VIEW ARTICLES ↗</span></div>
+              <div class="workspace-posts"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="workspace-footer"><span><b></b> API READY</span><span>NODE · TS · MONGO</span></div>
+        </div>
+
+        <div class="floating-note note-top"><span class="note-icon">{"}"}</span><span>Clean interfaces<br><b>Reliable systems</b></span></div>
+        <div class="floating-note note-bottom"><span class="note-icon note-ai">✳</span><span>Exploring<br><b>Applied AI</b></span></div>
+        <div class="visual-caption">IDEA → INTERFACE → IMPACT</div>
       </div>
+
+      <div class="hero-scroll"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 06</span></div>
     </section>
 
-    <section class="section-shell section-pad" id="work">
-      <div class="section-heading reveal"><div><span class="section-kicker">02 — SELECTED WORK</span><h2>Projects with a<br /><span class="muted-heading">purpose behind them.</span></h2></div><p class="section-intro">A selection of repository-backed work and clearly labelled explorations. Open the source to inspect implementation details and project scope.</p></div>
-      <div class="project-toolbar reveal"><div class="filter-group" role="group" aria-label="Filter projects"><button class="filter-btn active" data-filter="all">All work <span>08</span></button><button class="filter-btn" data-filter="fullstack">Full-stack</button><button class="filter-btn" data-filter="frontend">Frontend</button><button class="filter-btn" data-filter="learning">Learning</button><button class="filter-btn" data-filter="concept">Concepts</button></div><a class="text-link" href="https://github.com/fahim1252375-maker" target="_blank" rel="noopener noreferrer">All repositories <span>↗</span></a></div>
-      <div class="projects-grid" id="projectsGrid">
-        <article class="project-card project-featured tilt-card reveal" data-category="fullstack" data-project="blogspace"><div class="project-art art-blog"><div class="art-top"><span class="art-label">01 / FULL-STACK</span><span class="art-orbit">◉</span></div><div class="blog-ui"><div class="blog-ui-head"><b>blog<span>space.</span></b><small>STORIES THAT CONNECT</small></div><div class="blog-ui-line wide"></div><div class="blog-ui-line mid"></div><div class="blog-ui-cards"><i></i><i></i><i></i></div><div class="blog-ui-foot">READ · WRITE · PUBLISH</div></div><span class="art-stack">NODE / EXPRESS / MONGODB</span></div><div class="project-body"><div class="project-overline"><span>FLAGSHIP PROJECT</span><span class="project-year">2026</span></div><h3>BlogSpace — Full-Stack</h3><p>Full-stack blogging platform with JWT authentication, protected author workflows, MongoDB persistence, and server-side ownership checks.</p><div class="project-tags"><span>Node.js</span><span>Express</span><span>TypeScript</span><span>MongoDB</span><span>JWT</span></div><div class="project-links"><a href="https://github.com/fahim1252375-maker/blogspace-fullstack" target="_blank" rel="noopener noreferrer">Source code ↗</a><a href="https://github.com/fahim1252375-maker/blogspace-fullstack/pull/2" target="_blank" rel="noopener noreferrer">Security PR #2 ↗</a></div></div></article>
-        <article class="project-card tilt-card reveal" data-category="frontend" data-project="blogfront"><div class="project-art art-editorial"><div class="art-top"><span class="art-label">02 / FRONTEND</span><span class="art-orbit">✳</span></div><div class="editorial-ui"><div class="editorial-title">The<br /><em>Daily</em><br />Edit.</div><div class="editorial-rule"></div><div class="editorial-lines"><i></i><i></i><i></i></div><span>READ · DISCOVER · CREATE</span></div><span class="art-stack">HTML / CSS / VANILLA JS</span></div><div class="project-body"><div class="project-overline"><span>LIVE FRONTEND DEMO</span><span class="project-year">2026</span></div><h3>BlogSpace — Frontend</h3><p>Responsive editorial interface with article search, category filters, reader modal, and browser-based author dashboard.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vite</span></div><div class="project-links"><a href="https://bejewelled-haupia-dd6200.netlify.app" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/fahim1252375-maker/blog-application-frontend" target="_blank" rel="noopener noreferrer">Source code ↗</a></div><p class="scope-note">Demo data uses LocalStorage; this frontend repository is not connected to the separate API-backed project.</p></div></article>
-        <article class="project-card tilt-card reveal" data-category="frontend" data-project="cinnamon"><div class="project-art art-cinnamon"><div class="art-top"><span class="art-label">03 / FRONTEND</span><span class="art-orbit">✺</span></div><div class="cinnamon-ui"><span>EST. FOR GOOD TASTE</span><strong>CINNAMON</strong><i>RESTAURANT & PARTY CENTER</i><div class="cinnamon-btn">DISCOVER MENU ↗</div></div><span class="art-stack">SEMANTIC HTML / CSS / JS</span></div><div class="project-body"><div class="project-overline"><span>WEBSITE CONCEPT</span><span class="project-year">2026</span></div><h3>Cinnamon Restaurant</h3><p>Restaurant website concept with responsive navigation, menu filtering, gallery, form validation, and WhatsApp request handoff.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SEO</span></div><div class="project-links"><a href="https://github.com/fahim1252375-maker/restaurant-website-frontend" target="_blank" rel="noopener noreferrer">Source code ↗</a></div><p class="scope-note">Reservation form prepares a WhatsApp request; it does not store or confirm bookings.</p></div></article>
-        <article class="project-card tilt-card reveal" data-category="learning" data-project="mlstudy"><div class="project-art art-ml"><div class="art-top"><span class="art-label">04 / LEARNING</span><span class="art-orbit">∿</span></div><div class="ml-ui"><div class="ml-nodes"><i></i><i></i><i></i><i></i><i></i></div><strong>ML<span>_</span>LAB</strong><small>LEARN · EXPERIMENT · REPEAT</small></div><span class="art-stack">PYTHON / ML FUNDAMENTALS</span></div><div class="project-body"><div class="project-overline"><span>STUDY FORK</span><span class="project-year">ONGOING</span></div><h3>Machine Learning Studies</h3><p>A personal study fork of Microsoft's ML-For-Beginners curriculum, used to explore machine-learning fundamentals and learning exercises.</p><div class="project-tags"><span>Python</span><span>Machine Learning</span><span>Notebooks</span><span>Learning</span></div><div class="project-links"><a href="https://github.com/fahim1252375-maker/ML-For-Beginners" target="_blank" rel="noopener noreferrer">Study repository ↗</a></div><p class="scope-note">The curriculum is Microsoft's; this is a learning fork, not an original curriculum authored by me.</p></div></article>
-        <article class="project-card concept-card reveal" data-category="concept" data-project="floodguard"><div class="concept-symbol">⌁</div><div class="project-body"><div class="project-overline"><span>EARLY-STAGE CONCEPT</span><span class="project-year">EXPLORING</span></div><h3>FloodGuard AI</h3><p>Exploring a community-focused flood early-warning concept combining local reporting, risk information, and accessible alerts.</p><div class="project-tags"><span>AI exploration</span><span>Climate resilience</span><span>Early warning</span></div><span class="scope-note">Concept stage — not presented as a deployed system.</span></div></article>
-        <article class="project-card concept-card reveal" data-category="concept" data-project="scholarpath"><div class="concept-symbol">✳</div><div class="project-body"><div class="project-overline"><span>PRODUCT EXPLORATION</span><span class="project-year">EXPLORING</span></div><h3>ScholarPath</h3><p>Exploring a scholarship-discovery experience intended to help students organise opportunities, eligibility notes, and application research.</p><div class="project-tags"><span>EdTech</span><span>Research</span><span>Web application</span></div><span class="scope-note">Exploration — implementation and live availability not verified.</span></div></article>
-        <article class="project-card concept-card reveal" data-category="concept" data-project="martianmap"><div class="concept-symbol">◎</div><div class="project-body"><div class="project-overline"><span>STEM / MAP EXPLORATION</span><span class="project-year">2026</span></div><h3>Martian Map</h3><p>A student space-science project context connected with NASA Space Apps participation, exploring map-based ways to engage with Mars-related data.</p><div class="project-tags"><span>NASA Space Apps</span><span>Space science</span><span>Mapping</span></div><span class="scope-note">Participation and project context recorded; public repository/demo and award status not verified.</span></div></article>
-        <article class="project-card concept-card reveal" data-category="concept" data-project="fahimcars"><div class="concept-symbol">↗</div><div class="project-body"><div class="project-overline"><span>PRODUCT CONCEPT</span><span class="project-year">EXPLORING</span></div><h3>FAHIM CARS</h3><p>Exploring a premium automotive marketplace experience with a multi-page full-stack direction and a dark, understated visual identity.</p><div class="project-tags"><span>Full-stack concept</span><span>Marketplace</span><span>UI exploration</span></div><span class="scope-note">Concept/early planning — not presented as a completed product.</span></div></article>
-      </div>
-      <p class="empty-state" id="emptyState" hidden>No projects in this category yet.</p>
-    </section>
-
-    <section class="section-shell section-pad" id="skills">
-      <div class="section-heading reveal"><div><span class="section-kicker">03 — TOOLS & TECHNOLOGIES</span><h2>The stack I'm<br /><span class="muted-heading">growing with.</span></h2></div><p class="section-intro">A practical toolkit built through coursework, experiments, and project implementation. Skill labels represent areas I've worked with, not formal proficiency ratings.</p></div>
-      <div class="skills-grid">
-        <article class="skill-panel reveal"><div class="skill-panel-top"><span class="skill-icon">⌘</span><span class="card-index">01 / INTERFACE</span></div><h3>Frontend development</h3><p>Building responsive, accessible interfaces and interactive browser experiences.</p><div class="skill-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Vite</span></div></article>
-        <article class="skill-panel reveal reveal-delay"><div class="skill-panel-top"><span class="skill-icon">{ }</span><span class="card-index">02 / SERVER</span></div><h3>Backend & APIs</h3><p>Learning to structure server-side applications, validation, authentication, and API workflows.</p><div class="skill-list"><span>Node.js</span><span>Express.js</span><span>TypeScript</span><span>REST APIs</span><span>JWT</span><span>bcryptjs</span></div></article>
-        <article class="skill-panel reveal"><div class="skill-panel-top"><span class="skill-icon">◈</span><span class="card-index">03 / DATA</span></div><h3>Data & persistence</h3><p>Working with document databases and browser-side demonstration storage.</p><div class="skill-list"><span>MongoDB</span><span>Mongoose</span><span>LocalStorage</span><span>JSON</span></div></article>
-        <article class="skill-panel reveal reveal-delay"><div class="skill-panel-top"><span class="skill-icon">⌬</span><span class="card-index">04 / TOOLING</span></div><h3>Programming & workflow</h3><p>Using developer tools to build, inspect, test, document, and iterate.</p><div class="skill-list"><span>Python</span><span>C++</span><span>Git</span><span>GitHub</span><span>Postman</span><span>Figma</span><span>Microsoft 365</span></div></article>
-      </div>
-      <div class="engineering-banner reveal"><div><span class="section-kicker">ENGINEERING PRACTICE</span><h3>Beyond making it work.<br /><span class="muted-heading">Learning to make it dependable.</span></h3></div><div class="practice-list"><span><b>✓</b> TypeScript validation</span><span><b>✓</b> Automated tests</span><span><b>✓</b> Authentication & ownership checks</span><span><b>✓</b> Rate limiting fundamentals</span><span><b>✓</b> Production build checks</span></div></div>
-    </section>
-
-    <section class="section-shell section-pad" id="credentials">
-      <div class="section-heading reveal"><div><span class="section-kicker">04 — LEARNING & RECOGNITION</span><h2>Milestones that<br /><span class="muted-heading">keep me moving.</span></h2></div><p class="section-intro">Formal learning, course recognition, and technical learning milestones. Credential images and verification URLs can be added when supplied.</p></div>
-      <div class="credentials-layout"><div class="credentials-feature reveal"><div class="credential-seal">✳</div><span class="credential-type">CERTIFICATE OF EXCELLENCE</span><h3>Full Stack Development<br /><em>with MERN</em></h3><p>Grameenphone Academy × CodersTrust</p><div class="credential-bottom"><span>OCTOBER 2026</span><span class="credential-line"></span><span>01 / 03</span></div><div class="credential-watermark">GP</div></div>
-        <div class="credential-list">
-          <article class="credential-row reveal"><div class="credential-index">02</div><div><span class="credential-type">COURSE RECOGNITION</span><h3>Best Project / Best Performer recognition</h3><p>IT Aid · Web Design Course</p><small>Recognition wording should be matched to the exact certificate before public verification.</small></div><span class="credential-arrow">↗</span></article>
-          <article class="credential-row reveal reveal-delay"><div class="credential-index">03</div><div><span class="credential-type">PROFESSIONAL LEARNING</span><h3>Build ATS-Winning CV</h3><p>Certificate recorded in profile information shared with me.</p><small>Issuer and credential URL not supplied.</small></div><span class="credential-arrow">↗</span></article>
-          <article class="credential-row reveal"><div class="credential-index">04</div><div><span class="credential-type">TECHNICAL LEARNING</span><h3>Microsoft Learn badges</h3><p>4 learning badges recorded.</p><small>Individual module names and badge URLs not supplied.</small></div><span class="credential-arrow">↗</span></article>
-        </div></div>
-      <div class="credential-note reveal"><span>ⓘ</span><p>Only credential names and issuer details available in the supplied profile information are displayed. No certificate IDs, grades, or verification links have been invented.</p></div>
-    </section>
-
-    <section class="section-shell section-pad" id="journey">
-      <div class="section-heading reveal"><div><span class="section-kicker">05 — SELECTED JOURNEY</span><h2>Learning, leadership<br /><span class="muted-heading">& showing up.</span></h2></div><p class="section-intro">A few academic, community, and STEM experiences that complement my technical learning.</p></div>
-      <div class="timeline">
-        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">2026 · ACADEMIC</div><div class="timeline-content"><h3>HSC Science</h3><p>Blue Bird High School & College · Sylhet, Bangladesh</p><span>Current education</span></div></article>
-        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">2026 · STEM</div><div class="timeline-content"><h3>NASA Space Apps & STEM exploration</h3><p>Participating in space-science and student innovation activities, including a Martian Map project context.</p><span>Participation / project context — award status not claimed</span></div></article>
-        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">2025–2026 · LEADERSHIP</div><div class="timeline-content"><h3>Model United Nations & student leadership</h3><p>LUIMUN Head of Department at Blue Bird High School & College and LUIMUN 2025 UNCSTD delegate representing the Republic of Türkiye.</p><span>Selected student activities</span></div></article>
-        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">ONGOING · COMMUNITY</div><div class="timeline-content"><h3>Volunteering & community engagement</h3><p>Engagement with student and community initiatives including VBD, Bangladesh Red Crescent, and local volunteer groups.</p><span>Volunteer interests and participation</span></div></article>
+    <section class="signal-strip" aria-label="Core technologies">
+      <div class="signal-track">
+        <span>TypeScript</span><b>✳</b><span>React</span><b>✳</b><span>Node.js</span><b>✳</b><span>Express</span><b>✳</b><span>MongoDB</span><b>✳</b><span>Firebase</span><b>✳</b><span>TypeScript</span><b>✳</b><span>React</span><b>✳</b><span>Node.js</span><b>✳</b><span>Express</span><b>✳</b><span>MongoDB</span><b>✳</b><span>Firebase</span><b>✳</b>
       </div>
     </section>
 
-    
-    <section class="section-shell section-pad" id="opensource">
+    <section class="section-shell intro-section section-pad" id="about">
+      <div class="section-index reveal"><span>01</span><i></i><span>THE DEVELOPER</span></div>
+      <div class="intro-grid">
+        <div class="intro-heading reveal">
+          <p class="section-kicker">ENGINEERING WITH INTENT</p>
+          <h2>Curiosity starts the build.<br><span>Craft takes it further.</span></h2>
+        </div>
+        <div class="intro-copy reveal reveal-delay">
+          <p>I work across the stack—from shaping an interface to designing the API and data layer behind it. I care about the details users feel: clear flows, useful feedback, secure access, and software that stays understandable as it grows.</p>
+          <p>I'm also an HSC Science student at Blue Bird High School & College. That mix of technical curiosity, leadership, and hands-on building shapes how I approach every project.</p>
+          <a class="inline-link" href="https://github.com/fahim1252375-maker" target="_blank" rel="noopener noreferrer">Explore my GitHub <span>↗</span></a>
+        </div>
+      </div>
+      <div class="intro-facts reveal">
+        <div><strong>02</strong><span>MERGED NEO.MJS<br>CONTRIBUTIONS</span></div>
+        <div><strong>02</strong><span>FULL-STACK<br>INTERNSHIPS</span></div>
+        <div><strong>03</strong><span>FLAGSHIP PRODUCT<br>BUILDS</span></div>
+        <div><strong>BN / EN</strong><span>LANGUAGE-ACCESSIBLE<br>PRODUCT THINKING</span></div>
+      </div>
+    </section>
+
+    <section class="section-shell work-section section-pad" id="work">
       <div class="section-heading reveal">
         <div>
-          <span class="section-kicker">06 — OPEN-SOURCE CONTRIBUTIONS</span>
-          <h2>Learning through<br /><span class="muted-heading">upstream engineering.</span></h2>
+          <div class="section-index"><span>02</span><i></i><span>SELECTED WORK</span></div>
+          <h2>Built to be useful.<br><span>Designed to be explored.</span></h2>
         </div>
-        <p class="section-intro">Focused contributions to Neo.mjs, an open-source JavaScript framework. Each change was submitted against a documented issue, reviewed upstream, and merged into the project's dev branch.</p>
+        <p class="section-description">A focused collection of full-stack applications, applied AI prototypes, and frontend experiences. Each project starts with a real user need.</p>
       </div>
-      <div class="opensource-grid">
-        <article class="contribution-card reveal">
-          <div class="contribution-top">
-            <span class="contribution-status"><i aria-hidden="true"></i> MERGED</span>
-            <span class="contribution-kind">BUG FIX · RUNTIME</span>
+
+      <div class="work-toolbar reveal">
+        <div class="filter-group" role="group" aria-label="Filter selected projects">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>05</span></button>
+          <button class="filter-button" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">Applied AI</button>
+          <button class="filter-button" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        </div>
+        <a class="inline-link" href="https://github.com/fahim1252375-maker" target="_blank" rel="noopener noreferrer">All repositories <span>↗</span></a>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card project-featured reveal" data-category="fullstack">
+          <div class="project-visual visual-blogspace">
+            <div class="visual-topline"><span>01 / FULL-STACK APPLICATION</span><span class="visual-number">01</span></div>
+            <div class="mini-browser blog-browser">
+              <div class="mini-browser-bar"><div class="mini-dots"><i></i><i></i><i></i></div><span>blogspace.app / dashboard</span><span>↗</span></div>
+              <div class="blog-browser-body">
+                <aside><b>blog<span>.</span></b><i class="selected"></i><i></i><i></i><i></i></aside>
+                <div class="blog-dashboard">
+                  <div class="dashboard-greeting"><small>YOUR WORKSPACE</small><b>Good writing<br>starts here.</b><span>＋ New article</span></div>
+                  <div class="dashboard-metrics"><div><small>ARTICLES</small><b>12</b></div><div><small>STATUS</small><b>Active</b></div><div><small>PROFILE</small><b>Ready</b></div></div>
+                  <div class="dashboard-table"><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="visual-techline">NODE.JS <b>·</b> EXPRESS <b>·</b> TYPESCRIPT <b>·</b> MONGODB</div>
           </div>
-          <h3>Fix UUID generation on insecure HTTP origins</h3>
-          <p>Added a shared RFC 4122 v4 UUID utility using <code>crypto.getRandomValues()</code>, replaced browser-side <code>crypto.randomUUID()</code> calls across 18 call sites, and updated <code>CanvasGroups.mint()</code> while preserving its existing ID format.</p>
-          <div class="contribution-facts">
-            <span>13 files changed</span>
-            <span>119 additions</span>
-            <span>Unit + Playwright coverage</span>
-            <span>CI checks passed</span>
-          </div>
-          <div class="contribution-links">
-            <a href="https://github.com/neomjs/neo/pull/20785" target="_blank" rel="noopener noreferrer">Pull request #20785 <span>↗</span></a>
-            <a href="https://github.com/neomjs/neo/issues/20765" target="_blank" rel="noopener noreferrer">Issue #20765 <span>↗</span></a>
+          <div class="project-content">
+            <div class="project-meta"><span class="project-kind">FLAGSHIP PROJECT</span><span>01 / 05</span></div>
+            <h3>BlogSpace <span>Full-Stack</span></h3>
+            <p>I engineered a publishing platform with protected author workflows, JWT authentication, password hashing, MongoDB persistence, and server-side ownership checks.</p>
+            <div class="project-proof"><span>13 automated regression tests</span><span>Rate-limited auth routes</span><span>TypeScript API</span></div>
+            <div class="tag-list"><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+            <div class="project-actions">
+              <a href="https://github.com/fahim1252375-maker/blogspace-fullstack" target="_blank" rel="noopener noreferrer">View source <span>↗</span></a>
+              <a href="https://github.com/fahim1252375-maker/blogspace-fullstack/pull/2" target="_blank" rel="noopener noreferrer">Security work <span>↗</span></a>
+            </div>
           </div>
         </article>
-        <article class="contribution-card reveal reveal-delay">
-          <div class="contribution-top">
-            <span class="contribution-status"><i aria-hidden="true"></i> MERGED</span>
-            <span class="contribution-kind">DOCUMENTATION · TESTING</span>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-visual visual-shastho">
+            <div class="visual-topline"><span>02 / APPLIED AI PROTOTYPE</span><span class="visual-number">02</span></div>
+            <div class="health-interface">
+              <div class="health-interface-head"><span class="health-brand">shastho<span>note.</span></span><span class="health-lang">বাংলা / EN</span></div>
+              <div class="health-title">Your health story,<br><em>clearly organised.</em></div>
+              <div class="health-note"><span>VISIT NOTES</span><b>What I want to discuss</b><i></i><i></i><i class="short"></i></div>
+              <div class="health-summary"><span>AI SUMMARY</span><b>Key points, made clearer.</b><small>Prepared for your next appointment</small></div>
+            </div>
+            <div class="visual-techline">FIREBASE AUTH <b>·</b> FIRESTORE <b>·</b> LLM SUMMARIES</div>
           </div>
-          <h3>Document BlobPart support and test binary downloads</h3>
-          <p>Clarified the <code>FileDownload#saveText</code> API contract for text and binary <code>BlobPart</code> payloads, then added Playwright unit tests for string and <code>Uint8Array</code> downloads, MIME types, byte integrity, and object-URL cleanup.</p>
-          <div class="contribution-facts">
-            <span>2 files changed</span>
-            <span>106 additions</span>
-            <span>2 targeted local tests passed</span>
-            <span>CI checks passed</span>
+          <div class="project-content">
+            <div class="project-meta"><span class="project-kind">APPLIED AI PROTOTYPE</span><span>02 / 05</span></div>
+            <h3>ShasthoNote AI</h3>
+            <p>A Bangla-English health workspace that helps people organise medical notes and prepare clear summaries before doctor visits.</p>
+            <div class="tag-list"><span>TypeScript</span><span>Node.js</span><span>Firebase</span><span>Firestore</span><span>LLM</span></div>
+            <div class="project-actions"><a href="https://github.com/fahim1252375-maker/shasthonote-ai" target="_blank" rel="noopener noreferrer">Explore the prototype <span>↗</span></a></div>
           </div>
-          <div class="contribution-links">
-            <a href="https://github.com/neomjs/neo/pull/20746" target="_blank" rel="noopener noreferrer">Pull request #20746 <span>↗</span></a>
-            <a href="https://github.com/neomjs/neo/issues/20736" target="_blank" rel="noopener noreferrer">Issue #20736 <span>↗</span></a>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-visual visual-flood">
+            <div class="visual-topline"><span>03 / CIVIC-TECH PROTOTYPE</span><span class="visual-number">03</span></div>
+            <div class="flood-interface">
+              <div class="map-label"><span>SYLHET REGION</span><b>LIVE MAP CONCEPT</b></div>
+              <div class="map-river river-one"></div><div class="map-river river-two"></div>
+              <i class="map-pin pin-one"></i><i class="map-pin pin-two"></i><i class="map-pin pin-three"></i>
+              <div class="water-card"><span>COMMUNITY REPORT</span><b>Water level update</b><small>Local observation · Map view</small></div>
+              <div class="map-legend"><i></i> Waterway <i></i> Report point</div>
+            </div>
+            <div class="visual-techline">WEB MAPPING <b>·</b> WEATHER INDICATORS <b>·</b> BN / EN</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span class="project-kind">CIVIC-TECH PROTOTYPE</span><span>03 / 05</span></div>
+            <h3>FloodGuard AI</h3>
+            <p>A bilingual flood-preparedness experience for north-eastern Bangladesh, bringing community water-level reports, map context, and weather indicators together.</p>
+            <div class="tag-list"><span>JavaScript</span><span>Node.js</span><span>Leaflet</span><span>Weather data</span></div>
+            <div class="project-actions">
+              <a href="https://flourishing-torrone.netlify.app" target="_blank" rel="noopener noreferrer">Open prototype <span>↗</span></a>
+              <a href="https://github.com/fahim1252375-maker/floodguard-ai" target="_blank" rel="noopener noreferrer">Source code <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="frontend">
+          <div class="project-visual visual-editorial">
+            <div class="visual-topline"><span>04 / FRONTEND APPLICATION</span><span class="visual-number">04</span></div>
+            <div class="editorial-browser">
+              <div class="mini-browser-bar"><div class="mini-dots"><i></i><i></i><i></i></div><span>the-daily-edit / stories</span></div>
+              <div class="editorial-browser-body"><small>THE DAILY EDIT</small><b>Stories for<br><em>curious minds.</em></b><div class="editorial-thumbs"><i></i><i></i><i></i></div><span>READ · DISCOVER · CREATE</span></div>
+            </div>
+            <div class="visual-techline">HTML <b>·</b> CSS <b>·</b> JAVASCRIPT <b>·</b> VITE</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span class="project-kind">FRONTEND APPLICATION</span><span>04 / 05</span></div>
+            <h3>BlogSpace Frontend</h3>
+            <p>A responsive editorial interface with article search, category filters, reader views, and a browser-based author dashboard.</p>
+            <div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vite</span></div>
+            <div class="project-actions">
+              <a href="https://bejewelled-haupia-dd6200.netlify.app" target="_blank" rel="noopener noreferrer">Live demo <span>↗</span></a>
+              <a href="https://github.com/fahim1252375-maker/blog-application-frontend" target="_blank" rel="noopener noreferrer">Source code <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="frontend">
+          <div class="project-visual visual-cinnamon">
+            <div class="visual-topline"><span>05 / WEBSITE EXPERIENCE</span><span class="visual-number">05</span></div>
+            <div class="cinnamon-interface">
+              <span>GOOD FOOD. GOOD COMPANY.</span>
+              <strong>CINNAMON</strong>
+              <i>RESTAURANT & PARTY CENTER</i>
+              <b>EXPLORE THE MENU <span>↗</span></b>
+            </div>
+            <div class="visual-techline">RESPONSIVE UI <b>·</b> MENU FILTERS <b>·</b> WHATSAPP FLOW</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span class="project-kind">WEBSITE EXPERIENCE</span><span>05 / 05</span></div>
+            <h3>Cinnamon Restaurant</h3>
+            <p>A restaurant website concept with responsive navigation, menu filtering, gallery interactions, validated enquiry forms, and WhatsApp handoff.</p>
+            <div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SEO</span></div>
+            <div class="project-actions"><a href="https://github.com/fahim1252375-maker/restaurant-website-frontend" target="_blank" rel="noopener noreferrer">View source <span>↗</span></a></div>
           </div>
         </article>
       </div>
-      <p class="opensource-note">Both contributions were merged into <code>neomjs/neo:dev</code>. AI-assisted development is disclosed in the original issue / pull-request materials; I take responsibility for understanding and maintaining the work I submit.</p>
+      <p class="empty-state" id="emptyState" hidden>No projects match this filter yet.</p>
     </section>
 
-<section class="contact-section section-shell reveal" id="contact"><div class="contact-glow"></div><span class="section-kicker">HAVE A PROJECT OR AN IDEA?</span><h2>Let's build something<br /><span class="gradient-text">worth using.</span></h2><p>I'm interested in learning with others, meaningful collaborations, and opportunities to put thoughtful software into practice.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:fahim1252375@icloud.com">Send an email <span>↗</span></a><a class="btn btn-outline" href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">LinkedIn profile <span>↗</span></a></div><div class="contact-email"><span>EMAIL</span><button id="copyEmail" type="button" data-email="fahim1252375@icloud.com">fahim1252375@icloud.com <span>▣</span></button><span id="copyStatus" aria-live="polite"></span></div></section>
+    <section class="section-shell capabilities-section section-pad" id="capabilities">
+      <div class="section-index reveal"><span>03</span><i></i><span>CAPABILITIES & STACK</span></div>
+      <div class="section-heading reveal">
+        <h2>From interface<br><span>to infrastructure.</span></h2>
+        <p class="section-description">I enjoy the full product loop: understanding the user flow, building the interface, connecting the backend, and refining the experience.</p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <div class="capability-icon icon-interface">◫</div>
+          <span class="capability-number">01 / FRONTEND</span>
+          <h3>Interfaces that feel clear.</h3>
+          <p>Responsive layouts, reusable UI patterns, accessible interactions, and focused product experiences.</p>
+          <div class="tag-list"><span>React</span><span>JavaScript</span><span>TypeScript</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>Vite</span></div>
+        </article>
+        <article class="capability-card reveal reveal-delay">
+          <div class="capability-icon icon-backend">{ }</div>
+          <span class="capability-number">02 / BACKEND</span>
+          <h3>Systems built with care.</h3>
+          <p>RESTful APIs, authentication flows, request validation, ownership rules, and practical application logic.</p>
+          <div class="tag-list"><span>Node.js</span><span>Express.js</span><span>JWT</span><span>REST APIs</span><span>Firebase Auth</span></div>
+        </article>
+        <article class="capability-card reveal">
+          <div class="capability-icon icon-data">◈</div>
+          <span class="capability-number">03 / DATA & AI</span>
+          <h3>Useful data experiences.</h3>
+          <p>Document data models, cloud persistence, and AI-assisted workflows shaped around real user needs.</p>
+          <div class="tag-list"><span>MongoDB</span><span>Mongoose</span><span>Firestore</span><span>LLM APIs</span><span>Web mapping</span></div>
+        </article>
+      </div>
+
+      <div class="toolkit-band reveal">
+        <div><span class="section-kicker">CURRENT TOOLKIT</span><h3>Tools I use to build, test, and ship.</h3></div>
+        <div class="toolkit-items"><span>Git</span><span>GitHub</span><span>Postman</span><span>Figma</span><span>Netlify</span><span>Render</span><span>MongoDB Atlas</span><span class="learning-tag">Learning: Python</span><span class="learning-tag">Learning: C++</span></div>
+      </div>
+    </section>
+
+    <section class="section-shell opensource-section section-pad" id="opensource">
+      <div class="section-heading reveal">
+        <div>
+          <div class="section-index"><span>04</span><i></i><span>OPEN-SOURCE ENGINEERING</span></div>
+          <h2>Contribute upstream.<br><span>Learn in the open.</span></h2>
+        </div>
+        <p class="section-description">I work on focused fixes, API clarity, and regression coverage in projects maintained by the wider developer community.</p>
+      </div>
+
+      <div class="contribution-grid">
+        <article class="contribution-card reveal">
+          <div class="contribution-status status-merged"><i></i> MERGED</div>
+          <div class="contribution-org">NEO.MJS · PR #20785</div>
+          <h3>UUID generation fallback for HTTP origins</h3>
+          <p>Added a shared UUID v4 utility using <code>crypto.getRandomValues()</code>, replaced browser-side <code>crypto.randomUUID()</code> calls, and added regression coverage for HTTP contexts.</p>
+          <div class="contribution-details"><span>13 files changed</span><span>Unit + Playwright tests</span></div>
+          <a class="inline-link" href="https://github.com/neomjs/neo/pull/20785" target="_blank" rel="noopener noreferrer">Read merged pull request <span>↗</span></a>
+        </article>
+        <article class="contribution-card reveal reveal-delay">
+          <div class="contribution-status status-merged"><i></i> MERGED</div>
+          <div class="contribution-org">NEO.MJS · PR #20746</div>
+          <h3>BlobPart documentation and download tests</h3>
+          <p>Clarified the <code>FileDownload#saveText</code> API contract and added Playwright coverage for string and binary download payloads, MIME types, and byte integrity.</p>
+          <div class="contribution-details"><span>2 files changed</span><span>Playwright regression tests</span></div>
+          <a class="inline-link" href="https://github.com/neomjs/neo/pull/20746" target="_blank" rel="noopener noreferrer">Read merged pull request <span>↗</span></a>
+        </article>
+        <article class="contribution-card contribution-open reveal">
+          <div class="contribution-status status-open"><i></i> OPEN PULL REQUEST</div>
+          <div class="contribution-org">MICROSOFT · ML-FOR-BEGINNERS · PR #1082</div>
+          <h3>Gymnasium reinforcement-learning migration</h3>
+          <p>A contribution to the curriculum's reinforcement-learning materials, updating the learning path around the Gymnasium ecosystem.</p>
+          <div class="contribution-details"><span>Open-source contribution</span><span>In review</span></div>
+          <a class="inline-link" href="https://github.com/microsoft/ML-For-Beginners/pull/1082" target="_blank" rel="noopener noreferrer">View pull request <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell journey-section section-pad" id="journey">
+      <div class="section-index reveal"><span>05</span><i></i><span>EXPERIENCE & LEADERSHIP</span></div>
+      <div class="journey-grid">
+        <div class="journey-heading reveal">
+          <p class="section-kicker">GROWING THROUGH PRACTICE</p>
+          <h2>Build skills.<br><span>Take responsibility.</span></h2>
+          <p>Technical work is one part of my journey. Internships, student leadership, and community service keep me learning with people beyond the screen.</p>
+        </div>
+        <div class="journey-list">
+          <article class="journey-item reveal">
+            <div class="journey-date">INTERNSHIP</div>
+            <div><h3>Full-Stack Development Intern</h3><p>Progree · Practical web development experience</p></div>
+            <span class="journey-mark">↗</span>
+          </article>
+          <article class="journey-item reveal">
+            <div class="journey-date">INTERNSHIP</div>
+            <div><h3>Full-Stack Web Development Intern</h3><p>Codomax · Project-based development</p></div>
+            <span class="journey-mark">↗</span>
+          </article>
+          <article class="journey-item reveal">
+            <div class="journey-date">STUDENT LEADERSHIP</div>
+            <div><h3>Head of Department · UNCSTD Delegate</h3><p>LUIMUN · Department leadership and Model United Nations participation</p></div>
+            <span class="journey-mark">↗</span>
+          </article>
+          <article class="journey-item reveal">
+            <div class="journey-date">STEM & LEADERSHIP</div>
+            <div><h3>NASA Space Apps · BYLC BBLT 54</h3><p>Space Apps participant · Bangladesh Youth Leadership Center, BBLT cohort 54</p></div>
+            <span class="journey-mark">↗</span>
+          </article>
+          <article class="journey-item reveal">
+            <div class="journey-date">COMMUNITY</div>
+            <div><h3>Volunteer · Bangladesh Red Crescent & VBD</h3><p>Community engagement, service, and volunteer initiatives</p></div>
+            <span class="journey-mark">↗</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="learning-credential reveal">
+        <div class="credential-seal">✳</div>
+        <div><span class="section-kicker">PROFESSIONAL LEARNING</span><h3>Full-Stack Development with MERN</h3><p>Grameenphone Academy × CodersTrust</p></div>
+        <span class="credential-label">CERTIFICATE</span>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell reveal" id="contact">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="section-index"><span>06</span><i></i><span>LET'S CONNECT</span></div>
+      <p class="contact-kicker">HAVE AN IDEA WORTH BUILDING?</p>
+      <h2>Let's make something<br><span>meaningful.</span></h2>
+      <p class="contact-copy">I'm open to thoughtful collaboration, developer communities, and opportunities to build software that makes a difference.</p>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:fahim1252375@icloud.com">Email Fahim <span>↗</span></a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a>
+      </div>
+      <div class="contact-copy-email">
+        <span>DIRECT CONTACT</span>
+        <button id="copyEmail" type="button" data-email="fahim1252375@icloud.com">fahim1252375@icloud.com <span>▣</span></button>
+        <span id="copyStatus" role="status" aria-live="polite"></span>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FAHIM<span>/</span>DEV</span></a><p>Build with purpose. Test with care. Improve with every iteration.</p><div class="footer-links"><a href="https://github.com/fahim1252375-maker" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:fahim1252375@icloud.com">Email ↗</a><a href="https://classy-malabi-90a891.netlify.app" target="_blank" rel="noopener noreferrer">Previous portfolio ↗</a></div><span class="copyright">© <span id="year"></span> MD. MINHAZUR RAHMAN FAHIM</span></footer>
-  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">F<span>.</span></span><span class="brand-word">FAHIM<span>/</span>DEV</span></a>
+      <p>Thoughtful products. Reliable engineering. Continuous growth.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/fahim1252375-maker" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/md-minhazur-rahman-fahim-469b03447/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="mailto:fahim1252375@icloud.com">Email ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> MD. MINHAZUR RAHMAN FAHIM</span><span>MADE IN SYLHET, BANGLADESH <b>✳</b></span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
 </body>
 </html>
