@@ -1,3 +1,12 @@
+<div align="center">
+
+<img src="./assets/brand/project-banner.svg" width="100%" alt="progree-task-2-portfolio project header" />
+
+<img src="https://img.shields.io/badge/VISUAL%20SYSTEM-GITHUB%20DARK%20PRO-161B22?style=flat-square&labelColor=161B22&color=58A6FF" alt="GitHub Dark Pro visual system" />
+<img src="https://img.shields.io/badge/PROJECT-STUDENT%20BUILD-161B22?style=flat-square&labelColor=161B22&color=3FB950" alt="Student-built project" />
+
+</div>
+
 # Fahim — Developer Portfolio
 
 A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built with semantic HTML5, CSS, and vanilla JavaScript. It presents selected development work, skills, learning milestones, and contact links.
