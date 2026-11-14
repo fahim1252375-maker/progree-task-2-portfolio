@@ -6,6 +6,8 @@ A responsive, single-page portfolio for **MD. Minhazur Rahman Fahim**, built wit
 
 **[View the portfolio](https://grand-starlight-0c4115.netlify.app/)**
 
+**Additional deployment:** [Render-hosted portfolio](https://fahim-developer-portfolio.onrender.com)
+
 ## Repository
 
 **[GitHub source](https://github.com/fahim1252375-maker/progree-task-2-portfolio)**
